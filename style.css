@@ -63,6 +63,7 @@
 
 .address-bar {
   width: 5rem;
+  text-align: center;
 }
 
 .formula-bar {
@@ -108,6 +109,71 @@
   font-size: 0.9rem;
 }
 
+/* 
+    grid decoration
+    ----------------
+ */
+
 .grid-cont {
   height: calc(100vh - 3rem - 3rem - 2rem - 3rem);
+  position: relative;
+  overflow: scroll;
+  background-color: #ecf0f1;
+}
+
+.top-left-dummy {
+  height: 2rem;
+  width: 2rem;
+  background-color: #747d8c;
+  position: fixed;
+  z-index: 4;
+}
+
+.address-col-cont {
+  position: sticky;
+  top: 2rem;
+  left: 0px;
+}
+
+.address-row-cont {
+  position: sticky;
+  height: 2rem;
+  display: flex;
+  top: 0px;
+  left: 2rem;
+}
+
+.cells-cont {
+  position: absolute;
+  top: 0px;
+  left: 2rem;
+}
+
+.address-col {
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dfe4ea;
+}
+
+.address-row {
+  height: 2rem;
+  width: 5rem;
+  border: 1px solid #dfe4ea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell {
+  height: 2rem;
+  width: 5rem;
+  border: 1px solid #dfe4ea;
+  outline: none;
+}
+
+.row-cont {
+  display: flex;
 }
